@@ -12,7 +12,6 @@ tests=(
   nfa_utf8bytes
   nfa_bytes
   regex
-  regex_inline
 )
 tmpdir=$(mktemp -d)
 with_plugin=
