@@ -22,7 +22,7 @@ addons:
 after_success: ci/after_success.sh
 env:
   global:
-    secure: "ii5NwZiArNTxFuVnjXDHrYutkp82116hqBbzsCv/v53O5gCn1GKbCRyusFYHjr+ytymEPKH171cAQ7doGt3QPyFs2jdzK6+xz4obwCBfAPwgbtuFu9P/lIasG1ja2i/2T61g12DSlzAVTCkLnHNTLad4FWsyDyqJLpY4I4JFvcE="
+    secure: "DjM9j+3vsQtfVxwNs1GTp/iq/H+hgA6RoSN4Iyodqdfet0zbbyHGdJpWis0DjQhfOCKatfo5E55Yow8+RwytzxeRAk4IuO8KW/NBz20nAjfJwSXlqqvS3jaJ0cmsfhViJK6YoEL7Sl4WrJWlvVJQwCkLX4dcF2R2rWRw1tudIls="
 notifications:
   email:
     on_success: never
