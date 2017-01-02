@@ -1,8 +1,8 @@
 language: rust
 rust:
-  - 1.12.0
-  - stable
-  - beta
+  # - 1.12.0
+  # - stable
+  # - beta
   - nightly
 sudo: false
 script: ci/script.sh
