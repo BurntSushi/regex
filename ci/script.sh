@@ -6,7 +6,7 @@ set -e
 
 # Builds the regex crate and runs tests.
 cargo build --verbose
-#cargo doc --verbose
+cargo doc --verbose
 #if [ "$TRAVIS_RUST_VERSION" = "nightly" ]; then
 #  cargo build --verbose --manifest-path regex-debug/Cargo.toml
 #  RUSTFLAGS="-C target-feature=+ssse3" cargo test --verbose --features 'simd-accel pattern' --jobs 2
