@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This runs only when a commit is pushed to master. It is responsible for
 # updating docs and computing coverage statistics.
