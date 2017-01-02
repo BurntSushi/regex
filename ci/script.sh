@@ -6,7 +6,7 @@ set -e
 
 # Builds the regex crate and runs tests.
 cargo build --verbose
-cargo doc --verbose
+#cargo doc --verbose
 #if [ "$TRAVIS_RUST_VERSION" = "nightly" ]; then
 #  cargo build --verbose --manifest-path regex-debug/Cargo.toml
 #  RUSTFLAGS="-C target-feature=+ssse3" cargo test --verbose --features 'simd-accel pattern' --jobs 2
@@ -15,14 +15,14 @@ cargo doc --verbose
 #fi
 
 # Run a test that confirms the shootout benchmarks are correct.
-ci/run-shootout-test
+#ci/run-shootout-test
 
 # Run tests on regex-syntax crate.
 #cargo test --verbose --manifest-path regex-syntax/Cargo.toml
-cargo doc --verbose --manifest-path regex-syntax/Cargo.toml
+#cargo doc --verbose --manifest-path regex-syntax/Cargo.toml
 
 # Run tests on regex-capi crate.
-cargo build --verbose --manifest-path regex-capi/Cargo.toml
+#cargo build --verbose --manifest-path regex-capi/Cargo.toml
 #(cd regex-capi/ctest && ./compile && LD_LIBRARY_PATH=../target/debug ./test)
 #(cd regex-capi/examples && ./compile && LD_LIBRARY_PATH=../target/release ./iter)
 

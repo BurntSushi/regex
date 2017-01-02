@@ -1,10 +1,11 @@
 language: rust
+dist: trusty
+sudo: false
 rust:
   # - 1.12.0
   # - stable
   # - beta
   - nightly
-sudo: false
 script: ci/script.sh
 addons:
   apt:
@@ -13,6 +14,11 @@ addons:
       - libelf-dev
       - libdw-dev
       - binutils-dev
+      - wget
+      - clang-3.6
+      - cmake
+      - python
+      - python-virtualenv
 after_success: ci/after_success.sh
 env:
   global:
