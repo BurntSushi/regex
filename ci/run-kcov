@@ -42,7 +42,7 @@ if [ -n "$with_plugin" ]; then
     $(ls -t ./regex_macros/target/debug/plugin-* | head -n1)
 fi
 
-cargo test --no-run --verbose
+cargo test --no-run --verbose --jobs 4
 for t in ${tests[@]}; do
   kcov \
     --verify \
